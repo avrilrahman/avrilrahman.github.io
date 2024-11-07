@@ -1,0 +1,262 @@
+/* Basic body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top left, #5f6fa6, #4a5c98, #6a5c9c, #594a86);
+    color: #ffffff;
+}
+
+/* Hero section */
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.hero-text {
+    flex: 1;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.hero-image img {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Typewriter Effect */
+.typewriter {
+    font-size: 1.5em;
+    overflow: hidden;
+    border-right: 0.15em solid #4b9dcf;
+    white-space: nowrap;
+    animation: typing 2.5s steps(30, end) forwards, blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+
+/* Hero Section Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 15px; /* Adds space between buttons */
+    margin-top: 20px;
+}
+
+.button {
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #4b9dcf; /* Main button color */
+    border: none;
+    border-radius: 30px; /* Rounded edges */
+    text-align: center;
+    text-decoration: none; /* Removes underline */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+}
+
+/* Button Hover Effect */
+.button:hover {
+    background-color: #3a81a8; /* Darker shade on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Slightly larger shadow on hover */
+    transform: translateY(-3px); /* Lift effect */
+}
+
+/* Root color variables for cosmic dreamy theme */
+:root {
+    --navbar-bg: #1f004e;         /* Dark cosmic purple background */
+    --link-color: #c4a7e7;        /* Light pastel purple for links */
+    --hover-bg: #aa9fdf;          /* Soft purple-pink for hover background */
+    --hover-text-color: #ffffff;  /* White text on hover */
+    --active-bg: #b58aff;         /* Bright lavender for active link background */
+    --active-text-color: #ffffff; /* White text for active link */
+}
+
+/* Top navigation bar styling */
+.topnav {
+    background-color: var(--navbar-bg);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    color: var(--link-color);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 10px; /* Soft rounded corners */
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: var(--hover-bg);
+    color: var(--hover-text-color);
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: var(--active-bg);
+    color: var(--active-text-color);
+}
+
+
+/* About Me Section */
+.about-me {
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-me h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* About Me Content Layout */
+.about-me-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Text styling */
+.about-me-text {
+    flex: 1;
+    padding-left: 20px; /* Spacing between image and text */
+    text-align: left;
+}
+
+.about-me-text p {
+    line-height: 1.6; /* Increase line height for better readability */
+    font-size: 1.1em;
+}
+
+.about-me-text ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+/* Image styling */
+.about-me-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #4b9dcf; /* Add border for image */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Hero image styling */
+.hero-image img {
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* General styling for cards section */
+.cards-section {
+    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.cards-section h2 {
+    font-size: 2.2em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Card container to hold all cards in a flexbox layout */
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual card styling */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card .subtitle {
+    font-size: 1.1em;
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* Hover effect for the cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
